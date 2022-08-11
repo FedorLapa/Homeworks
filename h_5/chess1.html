@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/chess.png" type="image/x-icon">
+    <title>Chess board</title>
+    <style>
+        .chess {
+            width: 600px;
+            height: 600px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .chess td {
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .chess tr:nth-child(odd) td:nth-child(odd) {
+	        background: black;
+        }	
+        .chess tr:nth-child(even) td:nth-child(even) {
+	        background: black;
+        }
+    </style>
+</head>
+<body>
+    <table class="chess">
+        <tr>
+            <td style='background-image:url(images/rook.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/knight.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/bishop.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/king.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/queen.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/bishop.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/knight.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/rook.jpg);background-size: cover;'></td>
+        </tr>		
+        <tr>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/pawn.jpg);background-size: cover;'></td>
+        </tr>	
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>	
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>	
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>	
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>	
+        <tr>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_pawn.jpg);background-size: cover;'></td>
+        </tr>	
+        <tr>
+            <td style='background-image:url(images/w_rook.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_knight.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_bishop.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_king.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_queen.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_bishop.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_knight.jpg);background-size: cover;'></td>
+            <td style='background-image:url(images/w_rook.jpg);background-size: cover;'></td>
+        </tr>	
+    </table>
+</body>
+</html>
