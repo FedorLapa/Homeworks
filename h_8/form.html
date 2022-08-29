@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <form>
+    <div id="main">  
+        <div class="art"><h1 style="text-decoration: underline;text-align: center;">Registration Form</h1></div>
+          
+        <div>
+
+            <p><label for="1st name" style="padding-right:8px;">First name:</label>
+            <input name="1st name" type="text" required></p>
+
+            <p><label for="surname" style="padding-right:11px;">Last name:</label>
+            <input name="surname" type="text" required></p>
+
+            <p><label for="age" style="padding-right:64px;">Age:</label>
+            <input name="age" type="text" required></p>
+
+            <p><label for="email" style="padding-right:46px;">E-mail:</label>
+            <input name="email" type="text" required></p>
+
+            <p><label for="password" style="padding-right:21px;">Password:</label>
+            <input name="password" type="password" required></p>
+
+        <div>
+        
+            <label for="sex">SEX:</label>
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female 
+
+        <div>
+        
+            <p><label for="checkbox">Checkbox:</label></p>
+            <input type="checkbox" name="checkbox" value="I am a student">I am a student
+            <input type="checkbox" name="checkbox" value="I am a business man">I am a business man
+
+        <div>
+
+            <p><label for="bday">Birthday:</label></p>
+            <input type="date"placeholder="dd-mm-yyyy"
+            min="1935-01-01" max="2022-12-31" required>
+    
+        <div class="button">
+
+            <label for="submit">Submit Button:</label>
+            <input type="submit" value="Submit">
+
+        <div class="button">
+
+            <label for="reset" style="padding-right:11px;">Reset Button:</label>
+            <input type="reset" value="Reset">
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
