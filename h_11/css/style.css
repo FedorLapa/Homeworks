@@ -1,0 +1,100 @@
+#head {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    padding: 30px;
+
+}
+
+#boolean {
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#football {
+    padding: 27px 100px;
+    text-align: justify;
+    font-size: large;
+    margin: -10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 'header header'
+        'sidebar main'
+        'footer footer';
+}
+
+.header {
+    grid-area: header;
+    background-blend-mode: screen;
+    background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: rgba(228, 228, 0, 0.705);
+}
+
+.sidebar li:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
+}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
+    background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+}
+
+.ball {
+    background-image: url('../img/ball.png');
+    background-size: 130px;
+    background-repeat: repeat-y;
+    opacity: 0.7;
+    background-position: -50%;
+
+}
+
+@media screen and (max-width:600px) {
+
+    .grid {
+        grid-template-areas: "main"
+            "sidebar";
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .ball {
+        display: none;
+    }
+
+    .article p {
+        width: 200px;
+        margin-left: 0;
+    }
+
+    .article iframe {
+        vertical-align: center;
+        width: 50vw;
+    }
+}
