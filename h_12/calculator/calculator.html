@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <title>Calc</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt('Введите первое число:');
+        let b = prompt('Введите второе число:');
+        let type = prompt('Выберите тип операции:\n 1. Сложение\n 2. Вычитание\n 3. Умножение\n 4. Деление');
+        let formula;
+        let result;
+
+
+        if (type == 1) {
+            formula = Number(a) + Number(b)
+            result = (`Суммой чисел ${a} и ${b} является число: `)
+        } else {
+            if (type == 2) {
+                formula = Number(a) - Number(b)
+                result = (`Результатом вычитания ${a} - ${b} является число: `)
+
+            } else {
+                if (type == 3) {
+                    formula = Number(a) * Number(b)
+                    result = (`В результате умножения ${a} * ${b} получается число: `)
+
+                } else {
+                    if (type == 4) {
+                        formula = Number(a) / Number(b)
+                        result = (`Результатом деления ${a} / ${b} является число: `)
+
+                    } else {
+                        formula = ('Ooooops...')
+                        result = ('Try again')
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        alert(result + formula);
+
+    </script>
+</body>
+
+</html>
