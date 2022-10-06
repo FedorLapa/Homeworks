@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+</head>
+
+<body>
+    <script>
+        let obj1 = {
+            name: 'Fedor',
+            age: 22,
+            haircolor: 'blond',
+            habits: {
+                isSmoking: false,
+                isDrinking: true,
+                isGay: true,
+                isStudying: true,
+            },
+        };
+
+
+        let obj2 = {
+            name: 'Fedor',
+            age: 22,
+            haircolor: 'blond',
+            habits: {
+                isSmoking: false,
+                isDrinking: true,
+                isGay: true,
+                isStudying: true,
+            },
+        };
+
+
+
+        function compare(x, y) {
+
+            let keysObj1 = String(Object.keys(x))
+            let keysObj2 = String(Object.keys(y))
+            let valuesObj1 = String(Object.values(x))
+            let valuesObj2 = String(Object.values(y))
+
+            if (keysObj1 == keysObj2) {
+                if (valuesObj1 == valuesObj2) {
+                    console.log('Равные объекты.')
+                } else {
+                    console.log('Разные значения, объекты не равны.')
+                }
+
+            } else {
+                console.log('Обьекты не равны, разные ключи !')
+            }
+
+        }
+
+        compare(obj1, obj2)
+
+        console.log(obj1, obj2)
+
+    </script>
+</body>
+
+</html>
