@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <title>Корзина товаров</title>
+</head>
+
+<body>
+    <script>
+        let cart = []
+
+        function idRandom(max) {
+            return Math.floor(Math.random() * max); //Создаем функцию, которая генерирует случайно число, смотрит есть ли такое число в массиве и если есть, то еще раз вызывает себя же, а если нет, добавляет это число в массив.
+        }
+        function addToCart() {
+            let object = {}
+
+            cart.push(object) // + товаров через вводимых посредством prompt
+
+           
+            object.name = prompt('Введите наименование товара.')
+            object.class = prompt('Введите категорию выбранного товара.')
+            object.value = +prompt('Введите цену выбранного товара.')
+            object.amount = +prompt('Введите количество товара (например: 1, 2 и т.д).')
+            object.sum = object.value * object.amount
+            object.id = idRandom(9999)
+
+        }
+
+        addToCart()
+        console.log(cart) 
+    </script>
+</body>
+
+</html>
