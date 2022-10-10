@@ -13,23 +13,27 @@
 
         let array = [50, 60, 70, 71, 73, 10, 27, 55, 13, 17, 63, 33, 22, 21]
 
-        function min(array) {
-            let x = 100
-            for (let i = 0; i < array.length; i++) {
-                if (x > array[i]) { x = array[i] }
+        function min(array){
+        let min = array[0]
+            for (let i = 0; i < array.length; i++){
+                if(min > array [i+1]){
+                    min = array [i+1]
             }
-            console.log(x)
+        }
+            console.log (min)
         }
 
         min(array)
 
 
-        function max(array) {
-            let y = 0
-            for (let i = 0; i < array.length; i++) {
-                if (y < array[i]) { y = array[i] }
+        function max(array){
+        let max = array[0]
+            for (let i = 0; i < array.length; i++){
+                if (max < array [i+1]){
+                    max = array [i+1]
             }
-            console.log(y)
+        }
+            console.log (max)
         }
 
         max(array)

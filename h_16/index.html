@@ -17,11 +17,9 @@
             return Math.floor(Math.random() * max); //Создаем функцию, которая генерирует случайно число, смотрит есть ли такое число в массиве и если есть, то еще раз вызывает себя же, а если нет, добавляет это число в массив.
         }
         function addToCart() {
+
             let product = {}
 
-            cart.push(product) // + товаров через вводимых посредством prompt
-
-           
             product.name = prompt('Введите наименование товара.')
             product.class = prompt('Введите категорию выбранного товара.')
             product.value = +prompt('Введите цену выбранного товара.')
@@ -29,6 +27,8 @@
             product.sum = product.value * product.amount
             product.id = idRandom(50)
 
+            cart.push(product) // + товаров через вводимых посредством prompt
+            
         }
 
         addToCart()
